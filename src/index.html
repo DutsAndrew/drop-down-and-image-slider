@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic UI Interactions</title>
     <script src="./drop-down.js" defer></script>
-    <script src="./image-slider.js" defer></script>
     <link rel="stylesheet" href="./drop-down.css">
 </head>
 <body>
@@ -16,11 +15,11 @@
             <p id="website-title">Website Title</p>
         </div>
     </div>
-    <div id="drop-down-nav" class="drop-down-nav-closed">
-        <div id="drop-down-items-container">
-            <p id="drop-down-home">Home</p>
-            <p id="drop-down-about">About</p>
-            <p id="drop-down-contact">Contact</p>
+    <div id="drop-down-nav" class="drop-down-collapsed">
+        <div id="drop-down-items-container" class="drop-down-collapsed">
+            <p id="drop-down-home" class="drop-down-collapsed">Home</p>
+            <p id="drop-down-about" class="drop-down-collapsed">About</p>
+            <p id="drop-down-contact" class="drop-down-collapsed">Contact</p>
         </div>
     </div>
 </body>

@@ -8,6 +8,13 @@ html {
   flex-wrap: wrap;
 }
 
+.drop-down-collapsed {
+  display: grid;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
 #drop-down-menu {
   display: flex;
   flex-flow: column wrap;
@@ -31,10 +38,15 @@ html {
 
 #drop-down-menu-svg {
   display: flex;
-  width: 3vw;
+  width: 4vw;
   padding-left: 1vw;
   flex: 1 1 auto;
   filter: invert(26%) sepia(42%) saturate(3148%) hue-rotate(309deg) brightness(106%) contrast(108%);
+  transition: transform 500ms ease-in-out;
+}
+
+#drop-down-top-bar.clicked #drop-down-menu-svg {
+  transform: rotateX(160deg);
 }
 
 #website-title {
@@ -44,21 +56,11 @@ html {
   margin-left: -5vw;
 }
 
-.drop-down-nav-closed {
-  display: flex;
-  width: 0;
-  height: 0;
-  visibility: hidden;
-}
-
 .drop-down-nav-open {
-  display: flex;
-  width: 20vw;
   height: 100vh;
-  background-color: #E86252;
 }
 
-#drop-down-items-container {
+.drop-down-items-container-open {
   display: flex;
   width: 20vw;
   height: 100vh;
@@ -66,10 +68,12 @@ html {
   align-content: center;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 10%;
+  padding-top: 5%;
+  background-color: #E86252;
+  transition: all 300ms ease-in-out;
 }
 
-#drop-down-home {
+.drop-down-home-open {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,9 +82,10 @@ html {
   font-size: 2em;
   margin: 7%;
   color: #EEEBD0;
+  transition: transform .2s;
 }
 
-#drop-down-about {
+.drop-down-about-open {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,9 +94,10 @@ html {
   font-size: 2em;
   margin: 7%;
   color: #EEEBD0;
+  transition: transform .2s;
 }
 
-#drop-down-contact {
+.drop-down-contact-open {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,4 +106,17 @@ html {
   font-size: 2em;
   margin: 7%;
   color: #EEEBD0;
+  transition: transform 300ms;
+}
+
+#drop-down-home:hover, #drop-down-about:hover, #drop-down-contact:hover {
+  border: 0.1em solid #EEEBD0;
+  width: 10vw;
+  height: 5vh;
+  transform: scale(1.25);
+  font-weight: 900;
+}
+
+#drop-down-menu-svg:hover {
+  transform: scale(1.25);
 }
