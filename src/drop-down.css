@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+html {
+  background-color: #EBB3A9;
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#drop-down-menu {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  justify-content: center;
+  flex: 1 1 auto;
+  width: 100vw;
+  height: 7vh;
+  background-color: #EEEBD0;
+  color: #EBB3A9;
+}
+
+#drop-down-top-bar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  height: 7vh;
+}
+
+#drop-down-menu-svg {
+  display: flex;
+  width: 3vw;
+  padding-left: 1vw;
+  flex: 1 1 auto;
+  filter: invert(26%) sepia(42%) saturate(3148%) hue-rotate(309deg) brightness(106%) contrast(108%);
+}
+
+#website-title {
+  display: flex;
+  color: #EE2677;
+  font-size: 2em;
+  margin-left: -5vw;
+}
+
+.drop-down-nav-closed {
+  display: flex;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.drop-down-nav-open {
+  display: flex;
+  width: 20vw;
+  height: 100vh;
+  background-color: #E86252;
+}
+
+#drop-down-items-container {
+  display: flex;
+  width: 20vw;
+  height: 100vh;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10%;
+}
+
+#drop-down-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 2.5vh;
+  font-size: 2em;
+  margin: 7%;
+  color: #EEEBD0;
+}
+
+#drop-down-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 2.5vh;
+  font-size: 2em;
+  margin: 7%;
+  color: #EEEBD0;
+}
+
+#drop-down-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 2.0vh;
+  font-size: 2em;
+  margin: 7%;
+  color: #EEEBD0;
+}
