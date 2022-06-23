@@ -1,0 +1,24 @@
+{
+  "name": "drop-down-template-avd",
+  "version": "1.0.0",
+  "description": "A simple drop down menu with animations. Drop down button extends from the top left of the screen on click. Menu items have additional UI animations on hover.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DutsAndrew/drop-down-menu-template.git"
+  },
+  "keywords": [
+    "drop-down",
+    "menu",
+    "UI"
+  ],
+  "author": "Andrew Virgil Dutson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DutsAndrew/drop-down-menu-template/issues"
+  },
+  "homepage": "https://github.com/DutsAndrew/drop-down-menu-template#readme"
+}
