@@ -120,3 +120,11 @@ html {
 #drop-down-menu-svg:hover {
   transform: scale(1.25);
 }
+
+.button-clicked {
+  border: 0.1em solid #EEEBD0;
+  width: 10vw;
+  height: 5vh;
+  transform: scale(1.25);
+  font-weight: 900;
+}

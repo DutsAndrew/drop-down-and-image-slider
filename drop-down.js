@@ -25,3 +25,29 @@ function dropDownMenu() {
     dropDownContact.classList.toggle('drop-down-contact-open');
     dropDownContact.classList.toggle('drop-down-collapsed');
 }
+
+const dropDownHome = document.querySelector('#drop-down-home');
+  dropDownHome.addEventListener('click', function(e) {
+    toggleButton(e);
+  });
+
+const dropDownAbout = document.querySelector('#drop-down-about');
+  dropDownAbout.addEventListener('click', function(e) {
+    toggleButton(e);
+  });
+
+const dropDownContact = document.querySelector('#drop-down-contact');
+  dropDownContact.addEventListener('click', function(e) {
+    toggleButton(e);
+  });
+
+function toggleButton(e) {
+  let selectedClass = e.composedPath()[0].classList[0];
+  console.log(selectedClass);
+
+  let buttonEvent = e.composedPath()[0].id;
+  let selectedButton = document.querySelector(`#${buttonEvent}`);
+  console.log(selectedButton);
+
+  selectedButton.classList.toggle('button-clicked');
+}
